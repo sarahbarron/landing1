@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+
+		body{
+			background-color: #F5D76E;
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+		}
+
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+
+		#landing{
+			
+			width: 80%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			
+		}
+
+		#landing-message{
+			font-family:"Dosis";
+			text-align: center;
+			margin-bottom: 20px;
+
+		}
+		
+
+
+		@media screen and (min-width: 700px){
+			nav{
+				height: 100px;
+				flex-direction: row;
+				flex:1;
+			}
+			a{
+				border-style: none;
+			}
+
+			#landing-message{
+				text-align: right;
+			}
+			#landing-grapic{
+				
+			}
+
+			#logoNav{
+			flex:4;
+			text-align: left;
+			}
+
+
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+	<section id="landing">
+		<figcaption id="landing-message"><h2>This is my caption</h2></figcaption>
+		<figure id="landing-graphic">
+			<img id="fig1" src="graphic3.png" alt="my computer">
+		</figure>
+	</section>
+
+</body>
+</html>
